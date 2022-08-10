@@ -15,3 +15,5 @@ for(i = 0; i < wordArray.length; i++) {
 }
 //This is now my testing ground for RegExes
 console.log(counter)
+
+//RegEx for this: [^ \r\n]*@softwire\.com\b
