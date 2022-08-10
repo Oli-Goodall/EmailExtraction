@@ -1,8 +1,6 @@
-// Include fs module
 const fs = require('fs');
   
-// Calling the readFileSync() method
-// to read 'input.txt' file
+
 const data = fs.readFileSync('./test.txt',
             {encoding:'utf8', flag:'r'});
  
@@ -15,5 +13,5 @@ for(i = 0; i < wordArray.length; i++) {
     counter += 1 
 }
 }
-
+//This is now my testing ground for RegExes
 console.log(counter)
