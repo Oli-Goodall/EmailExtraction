@@ -15,7 +15,7 @@ for(i = 0; i < wordArray.length; i++) {
 }
 }
 //This is now my testing ground for RegExes
-console.log(counter)
+//console.log(counter)
 
 //RegEx for this: [^ \r\n]*@softwire\.com\b
 
@@ -42,15 +42,26 @@ for(i = 0; i < emailAddresses.length; i++){
 domainNames.forEach(domainName => {
   if (!dict[domainName]){
         dict[domainName] = 1
-      } 
-})
+      } else {
+        dict[domainName] += 1
+      }
+      }
+)
 
+//newArray = dict.map()
+
+// new Array = [[@softwire, 423], [@gmail, 125], ]
+
+dict.sort((a, b) => {
+  return a[1] - b[1]
+})
+console.log(dict)
 
 
 // console.log(dict["key"])
 
 
-console.log(dict)
+//console.log(dict)
 //console.log(emailAddresses.length)
 
 
